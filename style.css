@@ -14,7 +14,7 @@ body {
   
   main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     padding: 2rem;
   }
@@ -38,6 +38,7 @@ body {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    height: 15rem;
   }
   
   button {
