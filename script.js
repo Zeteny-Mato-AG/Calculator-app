@@ -175,8 +175,12 @@ function showConverterForm() {
     <select id="conversion">
       <option value="m-to-ft">Meters to Feet</option>
       <option value="ft-to-m">Feet to Meters</option>
+      <option value="ft-to-cm">Feet to Centimeters</option>
+      <option value="cm-to-ft">Centimeters to Feet</option>
       <option value="cm-to-in">Centimeters to Inches</option>
       <option value="in-to-cm">Inches to Centimeters</option>
+      <option value="in-to-m">Inches to Meters</option>
+      <option value="m-to-in">Meters to Inches</option>
     </select>
     <button onclick="convert()">Convert</button>
   `;
@@ -201,14 +205,24 @@ function convert() {
 
   switch (conversion) {
     case "m-to-ft":
-      result = value * 3.28084; // Meters to Feet
+      result = value * 3.048; // Meters to Feet
       fromUnit = 'meters';
       toUnit = 'feet';
       break;
     case "ft-to-m":
-      result = value / 3.28084; // Feet to Meters
+      result = value / 3.048; // Feet to Meters
       fromUnit = 'feet';
       toUnit = 'meters';
+      break;
+    case "cm-to-ft":
+      result = value / 30.48; // Centimeters to Feet
+      fromUnit = 'centimeters';
+      toUnit = 'feet';
+      break;
+    case "ft-to-cm":
+      result = value * 30.48; // Feet to Centimeters
+      fromUnit = 'feet';
+      toUnit = 'centimeters';
       break;
     case "cm-to-in":
       result = value / 2.54; // Centimeters to Inches
@@ -219,6 +233,16 @@ function convert() {
       result = value * 2.54; // Inches to Centimeters
       fromUnit = 'inches';
       toUnit = 'centimeters';
+      break;
+    case "in-to-m":
+      result = value * 0.0254; // Inches to Meters
+      fromUnit = 'inches';
+      toUnit = 'meters';
+      break;
+    case "m-to-in":
+      result = value / 0.0254; // Meters to inches
+      fromUnit = 'meters';
+      toUnit = 'inches';
       break;
     default:
       alert("Invalid conversion type selected.");
