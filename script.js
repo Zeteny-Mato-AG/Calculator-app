@@ -28,6 +28,11 @@ function showMathForm(shape) {
       <input type="number" id="height" placeholder="Enter Height">
       <button onclick="calculateTriangleArea()">Calculate</button>
     `;
+  } else if (shape === 'circle') {
+    formHtml += `
+      <input type="number" id="radius" placeholder="Enter Radius">
+      <button onclick="calculateCircleArea()">Calculate</button>
+    `;
   }
 
   formContainer.innerHTML = formHtml;
@@ -73,6 +78,19 @@ function calculateTriangleArea() {
 
   const area = 0.5 * base * height;
   document.getElementById("math-result").innerHTML = `Area of the triangle is: ${area.toFixed(2)} ${unit}²`;
+}
+
+function calculateCircleArea() {
+  const radius = parseFloat(document.getElementById("radius").value);
+  const unit = document.getElementById("unit").value;
+
+  if (isNaN(radius) || radius < 0) {
+    alert("Please enter a valid non-negative number.");
+    return;
+  }
+
+  const area = Math.PI * radius ** 2;
+  document.getElementById("math-result").innerHTML = `Area of the circle is: ${area.toFixed(2)} ${unit}²`;
 }
 
 function showOhmsForm(type) {
