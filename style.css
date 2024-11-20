@@ -2,13 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: #b0babf;
   }
   
   header {
     text-align: center;
     background: #333;
-    color: #fff;
+    color: #b78c38;
     padding: 1rem;
   }
   
@@ -26,7 +26,7 @@ body {
   
   h2 {
     text-align: center;
-    color: #333;
+    color: #b78c38;
   }
   
   .card {
@@ -44,7 +44,7 @@ body {
   button {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
-    background-color: orange;
+    background-color: #466273;
     color: white;
     border: none;
     border-radius: 5px;
@@ -52,7 +52,7 @@ body {
   }
   
   button:hover {
-    background-color: darkorange;
+    background-color: #253759;
   }
   
   input, select {
