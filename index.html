@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematical and Ohm's Law Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="calculator">
-        <input id="display" readonly>
-        <div id="keys">
-            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="clearDisplay()" class="operator-btn">C</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <header>
+    <h1>Mathematical and Ohm's Law Calculator</h1>
+  </header>
+  <main>
+    <section id="mathematics">
+      <h2>Mathematics - Area Calculations</h2>
+      <div class="card">
+        <button onclick="showMathForm('rectangle')">Rectangle</button>
+        <button onclick="showMathForm('square')">Square</button>
+        <button onclick="showMathForm('triangle')">Triangle</button>
+        <div id="math-form"></div>
+        <div id="math-result" class="result"></div>
+      </div>
+    </section>
+    <section id="ohms-law">
+      <h2>Ohm's Law Calculations</h2>
+      <div class="card">
+        <button onclick="showOhmsForm('voltage')">Voltage</button>
+        <button onclick="showOhmsForm('current')">Electric Current</button>
+        <button onclick="showOhmsForm('resistance')">Resistance</button>
+        <div id="ohms-form"></div>
+        <div id="ohms-result" class="result"></div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
