@@ -205,12 +205,12 @@ function convert() {
 
   switch (conversion) {
     case "m-to-ft":
-      result = value * 3.048; // Meters to Feet
+      result = value / 0.3048; // Meters to Feet
       fromUnit = 'meters';
       toUnit = 'feet';
       break;
     case "ft-to-m":
-      result = value / 3.048; // Feet to Meters
+      result = value * 0.3048; // Feet to Meters
       fromUnit = 'feet';
       toUnit = 'meters';
       break;
