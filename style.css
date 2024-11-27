@@ -9,6 +9,11 @@ body {
   header {
     text-align: center;
     color: #ff97a2;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
   }
   
   main {
@@ -26,10 +31,12 @@ body {
   h2 {
     text-align: center;
     color: #ff97a2;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 5px;
-    border-radius: 8px;
+    border-radius: 3px;
     display: inline-block;
+    display: flex;
+    justify-content: center;
   }
   
   .card {
