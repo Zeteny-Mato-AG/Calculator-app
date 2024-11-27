@@ -174,13 +174,13 @@ function showConverterForm() {
     <label for="conversion">Select Conversion:</label>
     <select id="conversion">
       <option value="m-to-ft">Meters to Feet</option>
+      <option value="m-to-in">Meters to Inches</option>
       <option value="ft-to-m">Feet to Meters</option>
       <option value="ft-to-cm">Feet to Centimeters</option>
       <option value="cm-to-ft">Centimeters to Feet</option>
       <option value="cm-to-in">Centimeters to Inches</option>
       <option value="in-to-cm">Inches to Centimeters</option>
       <option value="in-to-m">Inches to Meters</option>
-      <option value="m-to-in">Meters to Inches</option>
     </select>
     <button onclick="convert()">Convert</button>
   `;
