@@ -80,3 +80,12 @@ body {
     color: darkgreen;
   }
   
+  .section-image {
+    display: block;
+    margin: 0.5rem auto;
+    max-width: 25%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  
