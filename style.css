@@ -8,7 +8,7 @@ body {
   
   header {
     text-align: center;
-    color: #ff97a2;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5px;
     display: inline-block;
@@ -30,7 +30,7 @@ body {
   
   h2 {
     text-align: center;
-    color: #ff97a2;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5px;
     border-radius: 0.5px;
