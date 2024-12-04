@@ -12,28 +12,34 @@ function showMathForm(shape) {
     </select>
   `;
 
+  let image = document.getElementById("image-selector-thing-maybe")
+
   if (shape === 'rectangle') {
     formHtml += `
       <input type="number" id="length" placeholder="Enter Length">
       <input type="number" id="width" placeholder="Enter Width">
       <button onclick="calculateRectangleArea()">Calculate</button>
     `;
+    image.src = "rectangle.jpg"
   } else if (shape === 'square') {
     formHtml += `
       <input type="number" id="side" placeholder="Enter Side">
       <button onclick="calculateSquareArea()">Calculate</button>
     `;
+    image.src = "square.jpg"
   } else if (shape === 'triangle') {
     formHtml += `
       <input type="number" id="base" placeholder="Enter Base">
       <input type="number" id="height" placeholder="Enter Height">
       <button onclick="calculateTriangleArea()">Calculate</button>
     `;
+    image.src = "triangle.jpg"
   } else if (shape === 'circle') {
     formHtml += `
       <input type="number" id="radius" placeholder="Enter Radius">
       <button onclick="calculateCircleArea()">Calculate</button>
     `;
+    image.src = "circle.jpg"
   }
 
   formContainer.innerHTML = formHtml;
