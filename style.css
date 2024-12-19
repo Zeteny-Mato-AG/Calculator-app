@@ -49,6 +49,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     height: 25rem;
+    position: relative;
   }
   
   button {
@@ -75,9 +76,19 @@ body {
   }
   
   .result {
-    margin-top: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
     font-weight: bold;
     color: darkgreen;
+    padding: 0.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 2rem);
+    max-width: 90%;
+    text-align: center;
   }
   
   .section-image {
